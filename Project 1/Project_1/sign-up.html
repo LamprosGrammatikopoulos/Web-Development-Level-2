@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Home Page</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="styles/style.css">
+        <link rel="stylesheet" href="styles/form_styling.css">
+        <link rel="stylesheet" href="styles/drop_down_menu.css">
+    </head>
+    <body>
+
+        <header>
+            <h1>C Programming Language</h1>
+            <p>A basic tutorial about flow control in C programming language</p>
+            <nav class="topnav row" id="myTopnav">
+                <a href="index.html">Home</a>
+                <a href="basics.html">C Flow Control</a>
+                <a href="more.html">More</a>
+                <a href="quiz.html">Quiz</a>
+                <a href="sign-up.html">Sign Up</a>
+                <a href="login.html">Login</a>
+                <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="DropDownMenu()">&#9776;</a>
+            </nav>
+        </header>
+
+        <div class="col-5 col-s-7 row">
+            <article>
+                <section>
+                    <p style="font-weight: bold;">Sign up below:</p>
+                </section>
+            </article>
+        </div>
+
+        <div class="col-12 row">
+            <form class="col-5 col-s-7 row" action="" method="post">
+
+                <label for="name"><b>Name</b></label>
+                <input type="text" placeholder="Enter name" name="name" required>
+
+                <label for="lname"><b>Last name</b></label>
+                <input type="text" placeholder="Enter last name" name="lname" required>
+
+                <label for="dateofbirth"><b>Date of birth</b></label>
+                <input type="date" placeholder="Enter date of birth" name="dateofbirth" required>
+
+                <label for="uname"><b>Username</b></label>
+                <input type="text" placeholder="Enter username" name="uname" required>
+
+                <label for="psw"><b>Password</b></label>
+                <input type="password" placeholder="Enter password" name="psw" required>
+
+                <label for="psw"><b>Confirm Password</b></label>
+                <input type="password" placeholder="Enter the same password" name="psw" required>
+
+                <label for="email"><b>E-mail</b></label>
+                <input type="email" placeholder="Enter e-mail" name="email" required>
+
+                <label for="phonenumber"><b>Phone number</b></label>
+                <input type="email" placeholder="Enter phone number" name="phonenumber">
+
+                <label for="male">Male</label>
+                <input type="radio" name="gender" id="male" value="male"><br>
+                <label for="female">Female</label>
+                <input type="radio" name="gender" id="female" value="female"><br>
+                <label for="other">Other</label>
+                <input type="radio" name="gender" id="other" value="other"><br><br>  
+
+                <label for="remember">Remember me</label>
+                <input type="checkbox" checked="checked" value="remember" name="remember"><br>
+
+                <label for="sendmail">Send me e-mails</label>
+                <input type="checkbox" checked="checked" value="sendmail" name="sendmail"><br><br>
+
+                <label for="filename">Upload profile photo</label>
+                <input type="file" id="myFile" name="filename"><br>
+
+                <input type="submit" value="Sign Up"/><br> 
+
+              </form>
+        </div>
+
+        <footer class="col-12">
+            <p class="col-4">Hope you like my webpage :)</p>
+            <p class="col-4">Contact me <a href="#">here</a>.</p>
+            <p class="col-4">Rate my page <a href="#">here</a>.</p>
+        </footer>
+
+        <script src="scripts/drop_down_menu.js"></script>
+
+    </body>
+</html>

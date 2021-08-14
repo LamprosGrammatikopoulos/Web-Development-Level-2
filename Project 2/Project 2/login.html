@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+	<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale-1.0">
+		<link rel="stylesheet" type="text/css" href="./styles/login.css" />
+		<link rel="stylesheet" type="text/css" href="./styles/navbar.css" />
+		<script type="text/javascript" src="./scripts/quiz.js"></script>
+		<script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>   <!--Profile Icon-->
+		<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+		<script type="text/javascript">
+						$(function(){
+								$("#nav-placeholder").load("navbar.php");
+						});
+		</script>
+	</head>
+	<body>+-
+	 <!--===================================NavBar================================-->
+         <div id="nav-placeholder">
+
+        </div>
+         <!--===================================Main================================-->
+		<div class="row">
+			<div class="col-6">
+				<div  class="login" >
+					<h1 >Login</h1>
+				
+					<input type="text" name="username" id="username" placeholder="Username" required />
+					<input type="password" name="password" id="password" placeholder="Password" required />
+					
+					
+					<button class="btn btn-white btn-animation-1" onclick="displayErrors()">Log in</button>
+					<a  href="sign-up.php" class="LinkButton LinkButton-white LinkButton-animation-1">Create Account</a></br>
+					
+
+					<div id="warning" class="warning"></div>
+				</div>
+				
+			</div>
+			
+
+			<div class="col-6">
+				<img src="./media/Berlin.png" >
+			</div>
+		</div>
+
+		<script>
+			function displayErrors() {
+				//document.getElementById("warning").innerHTML = "";
+
+				username=document.getElementById("username").value;
+				password=document.getElementById("password").value;
+
+				
+
+				
+			 	if(window.XMLHttpRequest) {
+					xmlhttp = new XMLHttpRequest ( ); 
+				} // for "normal" browsers...
+				else {
+					xmlhttp = new ActiveXObject ("Microsoft.XMLHTTP"); } // for IE6, IE5
+					xmlhttp.onreadystatechange = function() {
+						if(xmlhttp.readyState == 4 && xmlhttp.status == 200) {
+							if(xmlhttp.responseText !="done"){
+								document.getElementById("warning").innerHTML = xmlhttp.responseText;
+							}else{
+								window.location.href = "index.html";
+							}
+							
+						}
+					}
+				
+					xmlhttp.open("GET","./php/user-login.php?username="+username+"&password="+password, true);
+					xmlhttp.send();
+				}
+				
+			
+		</script> 
+		
+	</body>
+	</html>

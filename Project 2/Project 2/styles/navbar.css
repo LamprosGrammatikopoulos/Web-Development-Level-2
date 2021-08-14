@@ -1,0 +1,337 @@
+.navbar1 {
+    position: fixed;
+    z-index: 2;
+    left: 0;
+    right: 0;
+    top: 0;
+    height: 70px;
+    padding:  10px 1.5em 0 0 ;
+	background-color: #3AAFA9;
+    font-family: 'Open Sans', sans-serif;  
+	border-bottom: 2px solid #17242A;
+}
+
+.navbar1 {
+    display: inline-block;
+    transition: .3s ease-in-out;
+}
+.navbar1 .logo{
+    float: left;
+    display: inline-block;
+    padding: 4px 0.5em;
+    color: #DEF2F1;
+    text-decoration: none;
+    font-size: 2em;
+	font-weight: 700;
+}
+.navbar1 .logo:hover{
+    color: #DEF2F1;
+}
+.navbar1 #menuButton{
+    float: right;
+	color: #17242A;
+	font-size: 2em;
+	font-weight: 700;
+}
+.navbar1 a{
+    float: left;
+    display: inline-block;
+    padding: 10px 1.5em;
+    color: #DEF2F1;
+    text-decoration: none;
+    font-size: 1.25em;
+	
+	transition-duration: 0.5s; 
+	transition-delay: 0.2s;
+} 
+.navbar1 a:hover{
+    color: #17242A;
+}
+.navbar1 #signinButton{
+    float: right;
+    display: inline-block;
+	padding: 0.25% 1.4em;
+    height: 40px;
+	color: #DEF2F1;
+    text-decoration: none;
+    background-color: #17242A;
+    font-size: 1.25em;
+    border-radius: 20px;
+	margin-top: 5px;
+}
+.navbar1 #signoutButton{
+	float: right;
+    display: inline-block;
+	padding: 0.25% 1.4em;
+    height: 40px;
+	color: #ee5b6a;
+    text-decoration: none;
+    background-color: #17242A;
+    font-size: 1.25em;
+    border-radius: 20px;
+	margin-top: 5px;
+}
+
+.mobButton{
+    display: none;
+    cursor: pointer;
+}
+
+
+
+
+
+@media screen and (max-width:768px){
+.desktopMenu{
+    display: none;
+  }
+  .mobButton{
+	  display: block;
+	  cursor: pointer;
+  }
+  .navbar2 {
+	  position: fixed;
+	  z-index: 2;
+	  left: 0;
+	  right: 0;
+	  top: 0;
+	  background-color: #3AAFA9;
+	  font-family: 'Open Sans', sans-serif;  
+	  border-bottom: 2px solid #17242A;
+	  display: flex;
+	  flex-direction: column;
+	  justify-content: start;
+	  transition: .3s ease-in-out;
+	  padding-bottom:10px;
+  }
+  .navbar2 a{
+	  text-align: center;
+	  display: inline-block;
+	  line-height: 70px;
+	  text-decoration: none;
+	  font-size: 1.25em;
+	  width: 100%;
+	  color: #DEF2F1;
+  }
+  .navbar2 a:hover{
+	  display: inline-block;
+	  line-height: 70px;
+	  color: #DEF2F1;
+	  background-color: #2B7A78;
+	  text-decoration: none;
+	  font-size: 1.25em;
+	  width: 80%;
+	  text-align: center;
+	  justify-items: center;
+	  margin-left: 80px;
+	  border-radius: 20px;
+  }
+  .navbar2 #signinButton{
+	display: inline-block;
+	line-height: 70px;
+	text-decoration: none;
+	font-size: 1.25em;
+	width: 80%;
+	text-align: center;
+	justify-items: center;
+	margin-left: 80px;
+	border-radius: 20px;
+	color: #DEF2F1;
+    background-color: #17242A;
+  }
+  .navbar2 #signoutButton{
+	display: inline-block;
+	line-height: 70px;
+	text-decoration: none;
+	font-size: 1.25em;
+	width: 80%;
+	text-align: center;
+	justify-items: center;
+	margin-left: 80px;
+	border-radius: 20px;
+	color: #ee5b6a;
+    background-color: #17242A;
+}
+  .navbar2 .logo{
+	float: left;
+    display: inline-block;
+    padding: 0 0.5em;
+    color: #DEF2F1;
+    text-decoration: none;
+    font-size: 2em;
+	font-weight: 600;
+	width: 20%;
+	text-align: left;
+
+	
+  }
+
+  .navbar2 #menuButton{
+	  
+	  float: right;
+	  color: #17242A;
+	  font-size: 2em;
+	  font-weight: 700;
+	  padding: 0.5em 0.8em;
+  }
+  
+  .desktopMenu{
+	  display: none;
+  }
+	  
+  }
+
+
+
+  @media screen and (max-width:600px){
+	
+.desktopMenu{
+	display: none;
+  }
+  .mobButton{
+	  display: block;
+	  cursor: pointer;
+  }
+  .navbar2 {
+	  position: fixed;
+	  z-index: 2;
+	  left: 0;
+	  right: 0;
+	  top: 0;
+	  background-color: #3AAFA9;
+	  font-family: 'Open Sans', sans-serif;  
+	  border-bottom: 2px solid #17242A;
+	  display: flex;
+	  flex-direction: column;
+	  justify-content: start;
+	  transition: .3s ease-in-out;
+	  padding-bottom:10px;
+  }
+  .navbar2 a{
+	  text-align: center;
+	  display: inline-block;
+	  line-height: 70px;
+	  color: #DEF2F1;
+	  text-decoration: none;
+	  font-size: 1.25em;
+	  width: 100%;
+  }
+  .navbar2 a:hover{
+	  float: right;
+	  text-align: center;
+	  padding: 0 1.5em;
+	  display: inline-block;
+	  line-height: 70px;
+	  text-decoration: none;
+	  font-size: 1.25em;
+	  width: 100%;
+	  border-radius: 20px;
+	  color: #DEF2F1;
+	  background-color: #2B7A78;
+  }
+  .navbar2 #signinButton{
+	  float: right;
+	  display: inline-block;
+	  padding: 0 1.5em;
+	  line-height: 70px;
+	  text-decoration: none;
+	  font-size: 1.25em;
+	  border-radius: 20px;
+	  width: 100%;
+  }
+  .navbar2 #signoutButton{
+	float: right;
+	display: inline-block;
+	padding: 0 1.5em;
+	line-height: 70px;
+	text-decoration: none;
+	font-size: 1.25em;
+	border-radius: 20px;
+	width: 100%;
+	}
+
+  
+  .desktopMenu{
+	  display: none;
+  }
+  
+  }
+
+/*============================================*/
+  
+  .dropbtn {
+	background-color: #3AAFA9;
+	color: #DEF2F1;
+	font-size: 1.25em;
+	padding: 8px 1.4em;
+	border:none;
+	margin-right: 5px;
+	height: 40px;
+	margin-top: 5px;
+	text-decoration: none;
+  }
+
+  
+  .dropdown {
+	position: relative;
+	display: inline-block;
+	float: right;
+  }
+  
+  .dropdown-content {
+	display: none;
+	position: absolute;
+	align-items: center;
+	justify-self: center;
+	background-color: #2B7A78;
+	min-width: 120px;
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	z-index: 1;
+	border-radius: 10px;
+  }
+  
+  .dropdown-content a {
+	color: #DEF2F1;
+	padding-top: 10px ;
+	padding-right: 15px ;
+	padding-left: 15px ;
+	text-decoration: none;
+	display: block;
+	width: 100%;
+	border-radius: 10px;
+  }
+
+  .dropdown-content a:hover{
+	background-color: #266967;
+  }
+  
+  
+  .dropdown:hover .dropdown-content {
+	  display: block;
+	}
+  
+  .dropdown:hover .dropbtn {
+	  background-color: #2B7A78;
+	  color: #DEF2F1;
+	  border-radius: 20px;
+	}
+
+
+
+
+/*============================================*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

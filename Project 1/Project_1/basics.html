@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Home Page</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="styles/style.css">
+        <link rel="stylesheet" href="styles/drop_down_menu.css">
+    </head>
+    <body>
+
+        <header>
+            <h1>C Programming Language</h1>
+            <p>A basic tutorial about flow control in C programming language</p>
+            <nav class="topnav row" id="myTopnav">
+                <a href="index.html">Home</a>
+                <a href="basics.html">C Flow Control</a>
+                <a href="more.html">More</a>
+                <a href="quiz.html">Quiz</a>
+                <a href="sign-up.html">Sign Up</a>
+                <a href="login.html">Login</a>
+                <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="DropDownMenu()">&#9776;</a>
+            </nav>
+        </header>
+
+        <div class="col-3 col-s-4 row">
+            <aside>
+                <a href="#C if...else Statement">
+                    <h1>[C if...else Statement]</h1>
+                </a>
+            </aside>
+            <aside>
+                <a href="#C for Loop">
+                    <h1>[C for Loop]</h1>
+                </a>
+            </aside>
+            <aside>
+                <a href="#C while and do...while Loop">
+                    <h1>[C while and do...while Loop]</h1>
+                </a>
+            </aside>
+            <aside>
+                <a href="#C break and continue">
+                    <h1>[C break and continue]</h1>
+                </a>
+            </aside>
+            <aside>
+                <a href="#C switch Statement">
+                    <h1>[C switch Statement]</h1>
+                </a>
+            </aside>
+            <aside>
+                <a href="#C goto Statement">
+                    <h1>[C goto Statement]</h1>
+                </a>
+            </aside>
+        </div>
+
+        <div class="col-8 col-s-8 row">
+            <article id="C if...else Statement">
+                <section>
+                    <h1>C if statement:</h1>
+                    <br>
+                    <p>
+                        The syntax of the if statement in C programming is:<br><br>
+                        if (test expression)<br>
+                        {<br>
+                        // code<br>
+                        }<br>
+                    </p>
+                    <p>
+                        The if statement evaluates the test expression inside the parenthesis ().
+                        <ul>
+                            <li>
+                                If the test expression is evaluated to true, statements inside the body of if are executed.
+                            </li>
+                            <li>
+                                If the test expression is evaluated to false, statements inside the body of if are not executed.
+                            </li>
+                        </ul>
+                    </p>
+                    <br>    
+                    <img src="media/images/if_1.png" alt="if">
+                    <br>
+                </section>
+                <section>
+                    <h1>C if...else statement</h1>
+                    <br>
+                    <p>
+                        The if statement may have an optional else block. The syntax of the if..else statement is:<br><br>
+                        if (test expression) {<br>
+                            // run code if test expression is true<br>
+                        }<br>
+                        else {<br>
+                            // run code if test expression is false<br>
+                        }<br>      
+                    </p>
+                    <p>
+                        If the test expression is evaluated to true,
+                        <ul>
+                            <li>
+                                statements inside the body of if are executed.
+                            </li>
+                            <li>
+                                statements inside the body of else are skipped from execution.
+                            </li>
+                        </ul>
+                    </p>
+                    <p>
+                        If the test expression is evaluated to false,
+                        <ul>
+                            <li>
+                                statements inside the body of else are executed
+                            </li>
+                            <li>
+                                statements inside the body of if are skipped from execution.
+                            </li>
+                        </ul>
+                    </p>
+                    <br>    
+                    <img src="media/images/if_2.png" alt="if-else">
+                    <br>
+                </section>
+                <section>
+                    <h1>C if...else ladder</h1>
+                    <br>
+                    <p>
+                        The if...else statement executes two different codes depending upon whether the test 
+                        expression is true or false. Sometimes, a choice has to be made from more than 2 possibilities.<br>
+                        The if...else ladder allows you to check between multiple test expressions and execute different statements.
+                    </p>
+                    <p>
+                        Syntax of if...else Ladder:<br><br>
+                        if (test expression1) {<br>
+                            // statement(s)<br>
+                        }<br>
+                        else if (test expression2) {<br>
+                            // statement(s)<br>
+                        }<br>
+                        else if (test expression3) {<br>
+                            // statement(s)<br>
+                        }<br>
+                        .<br>
+                        .<br>
+                        else {<br>
+                            // statement(s)<br>
+                        }<br>
+                    </p>
+                    <br>
+                </section>
+                <section>
+                    <h1>Nested if...else</h1>
+                    <br>
+                    <p>
+                        It is possible to include an if...else statement inside the body of another if...else statement.
+                    </p>
+                    <br>
+                </section>
+                <section>
+                    <h1>Also...</h1>
+                    <br>
+                    <p>
+                        If the body of an if...else statement has only one statement, you do not need to use brackets {}.
+                    </p>
+                    <br>
+                </section>
+            </article>
+            <article id="C for Loop">
+                <section>
+                    <h1>C for loop</h1>
+                    <br>
+                    <p>
+                        The syntax of the for loop is:<br><br>
+                        for (initializationStatement; testExpression; updateStatement)<br>
+                        {<br>
+                            // statements inside the body of loop<br>
+                        }<br>  
+                    </p>
+                    <p>
+                        How for loop works?<br><br>
+                        <ul>
+                            <li>
+                                The initialization statement is executed only once.
+                            </li>
+                            <li>
+                                Then, the test expression is evaluated. If the test expression is evaluated to false, the for loop is terminated.
+                            </li>
+                            <li>
+                                However, if the test expression is evaluated to true, statements inside the body of for loop are executed, and the update expression is updated.
+                            </li>
+                            <li>
+                                Again the test expression is evaluated.
+                            </li>
+                        </ul>
+                    </p>
+                    <p>
+                        This process goes on until the test expression is false. When the test expression is false, the loop terminates.
+                    </p>
+                    <p>
+                        See the for loop flowchart below:
+                    </p>
+                    <br>    
+                    <img src="media/images/for_1.png" alt="for">
+                    <br>
+                </section>
+            </article>
+            <article id="C while and do...while Loop">
+                <section>
+                    <h1>C while loop</h1>
+                    <br>
+                    <p>
+                        The syntax of the while loop is:<br><br>
+                        while (testExpression)<br>
+                        {<br>
+                            // the body of the loop<br> 
+                        }<br>
+                    </p>
+                    <p>
+                        How while loop works?<br><br>
+                        <ul>
+                            <li>
+                                The while loop evaluates the test expression inside the parenthesis ().
+                            </li>
+                            <li>
+                                If the test expression is true, statements inside the body of while loop are executed. Then, the test expression is evaluated again.
+                            </li>
+                            <li>
+                                The process goes on until the test expression is evaluated to false.
+                            </li>
+                            <li>
+                                If the test expression is false, the loop terminates (ends).
+                            </li>
+                        </ul>
+                    </p>
+                    <p>
+                        See the while loop flowchart below:
+                    </p>
+                    <br>    
+                    <img src="media/images/while_1.png" alt="while">
+                    <br>
+                </section>
+                <section>
+                    <h1>C do...while loop</h1>
+                    <br>
+                    <p>
+                        The do..while loop is similar to the while loop with one important difference. 
+                        The body of do...while loop is executed at least once. Only then, the test expression is evaluated.
+                    </p>
+                    <p>
+                        The syntax of the do...while loop is:<br><br>
+                        do<br>
+                        {<br>
+                            // the body of the loop<br>
+                        }<br>
+                        while (testExpression);<br>
+                    </p>
+                    <p>
+                        How do...while loop works?<br><br>
+                        <ul>
+                            <li>
+                                The body of do...while loop is executed once. Only then, the test expression is evaluated.
+                            </li>
+                            <li>
+                                If the test expression is true, the body of the loop is executed again and the test expression is evaluated.
+                            </li>
+                            <li>
+                                This process goes on until the test expression becomes false.
+                            </li>
+                            <li>
+                                If the test expression is false, the loop ends.
+                            </li>
+                        </ul>
+                    </p>
+                    <p>
+                        See the do...while loop flowchart below:
+                    </p>
+                    <br>    
+                    <img src="media/images/while_2.png" alt="do...while">
+                    <br>
+                </section>
+            </article>
+            <article id="C break and continue">
+                <section>
+                    <h1>C break</h1>
+                    <p>The break statement ends the loop immediately when it is encountered. Its syntax is:<br><br>
+                        break;
+                    </p>
+                    <p>
+                        The break statement is almost always used with if...else statement inside the loop.
+                    </p>
+                    <p>
+                        How break statement works?
+                    </p>
+                    <br>    
+                    <img src="media/images/brake_1.png" alt="break">
+                    <br>
+                    <p>
+                        In C, break is also used with the switch statement.
+                    </p>
+                    <br>
+                </section>
+                <section>
+                    <h1>C continue</h1>
+                    <p>The continue statement skips the current iteration of the loop and continues with the next iteration. Its syntax is:<br><br>
+                        continue;
+                    </p>
+                    <p>
+                        The continue statement is almost always used with the if...else statement.
+                    </p>
+                    <p>
+                        How continue statement works?
+                    </p>
+                    <br>    
+                    <img src="media/images/continue_1.png" alt="continue">
+                    <br>
+                    <p>
+                        When the user enters a negative number, the continue statement is executed and it skips the negative number from the calculation.
+                    </p>
+                    <br>
+                </section>
+            </article>
+            <article id="C switch Statement">
+                <section>
+                    <h1>C switch Statement</h1>
+                    <p>
+                        The switch statement allows us to execute one code block among many alternatives.
+                        You can do the same thing with the if...else..if ladder. However, the syntax of the switch statement is much easier to read and write.
+                    </p>
+                    <p>
+                        Syntax of switch...case:<br><br>
+                        switch (expression)<br>
+                        ​{<br>
+                            case constant1:<br>
+                            // statements<br>
+                            break;<br><br>
+
+                            case constant2:<br>
+                            // statements<br>
+                            break;<br>
+                            .<br>
+                            .<br>
+                            .<br>
+                            default:<br>
+                            // default statements<br>
+                        }<br>
+                    </p>
+                    <p>
+                        How does the switch statement work?<br><br>
+                        The expression is evaluated once and compared with the values of each case label.<br>
+                        <ul>
+                            <li>
+                                If there is a match, the corresponding statements after the matching label are executed. For example, 
+                                if the value of the expression is equal to constant2, statements after case constant2: are executed until break is encountered.
+                            </li>
+                            <li>
+                                If there is no match, the default statements are executed.
+                            </li>
+                        </ul>
+                    </p>
+                    <p>
+                        If we do not use break, all statements after the matching label are executed.
+                    </p>
+                    <p>
+                        By the way, the default clause inside the switch statement is optional.
+                    </p>
+                    <p>
+                        See the switch statement flowchart below:
+                    </p>
+                    <br>    
+                    <img src="media/images/switch_1.png" alt="switch">
+                    <br>
+                    <p>
+                        The break statement terminates the switch statement.
+                    </p>
+                    <br>
+                </section>
+            </article>
+            <article id="C goto Statement">
+                <section>
+                    <h1>C goto Statement</h1>
+                    <p>
+                        The goto statement allows us to transfer control of the program to the specified label.
+                    </p>
+                    <p>
+                        Syntax of goto Statement:<br><br>
+                        goto label;<br>
+                        ... .. ...<br>
+                        ... .. ...<br>
+                        label:<br>
+                        statement;<br>
+                    </p>
+                    <p>
+                        The label is an identifier. When the goto statement is encountered, the control of the program jumps to label: and starts executing the code.<br>          
+                    </p>
+                    <br>    
+                    <img src="media/images/goto_1.png" alt="goto">
+                    <br>
+                </section>
+                <section>
+                    <h1>Reasons to avoid goto</h1>
+                    <p>
+                        The use of goto statement may lead to code that is buggy and hard to follow. 
+                        Also, the goto statement allows you to do bad stuff such as jump out of the scope. 
+                        That being said, goto can be useful sometimes. For example: to break from nested loops.
+                    </p>
+                </section>
+                <section>
+                    <h1>Should you use goto?</h1>
+                    <p>
+                        If you think the use of goto statement simplifies your program, you can use it. That being said, 
+                        goto is rarely useful and you can create any C program without using goto altogether.
+                    </p>
+                </section>
+            </article>
+        </div>
+
+        <footer class="col-12 col-s-12">
+            <p class="col-4 col-s-4">Hope you like my webpage :)</p>
+            <p class="col-4 col-s-4">Contact me <a href="#">here</a>.</p>
+            <p class="col-4 col-s-4">Rate my page <a href="#">here</a>.</p>
+        </footer>
+
+        <script src="scripts/drop_down_menu.js"></script>
+
+    </body>
+</html>

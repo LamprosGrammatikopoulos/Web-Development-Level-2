@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+	<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale-1.0">
+		<link rel="stylesheet" type="text/css" href="./styles/basics.css" />
+		<link rel="stylesheet" type="text/css" href="./styles/navbar.css" />
+        <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>   <!--Profile Icon-->
+		<script type="text/javascript" src="./scripts/quiz.js"></script>
+		<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+                <script type="text/javascript">
+                                $(function(){
+                                        $("#nav-placeholder").load("navbar.php");
+                                });
+                </script>
+	</head>
+	<body>
+	 <!--===================================NavBar================================-->
+         <div id="nav-placeholder">
+
+        </div>
+        <!--===================================Main================================-->
+		<div class="row">
+			<div class="col-4 col-s-12">
+                <img  class="Image1" src="./media/BigBen.png">
+            </div>
+
+			
+            <div class="col-4 col-s-12">
+				<div class="boxText">				
+                    <b style="color: #d8dbdb;">Νεότερη Εποχή</b><br>
+                    <p>Ο ιστορικός όρος Νεότερη Εποχή ή Νεότεροι Χρόνοι αναφέρεται στην ιστορία της ανθρωπότητας μετά την Μεσαιωνική περίοδο. Περαιτέρω οι νεότεροι χρόνοι μπορούν να χωρίζονται στην Πρώιμη και την Ύστερη Νεότερη Εποχή με όριο την Γαλλική Επανάσταση και την Βιομηχανική Επανάσταση. Η Σύγχρονη Εποχή αποτελείται από τα ιστορικά γεγονότα που είναι άμεσα σχετικά με το σήμερα. </p>
+                    <b style="color: #d8dbdb;">Περιεχόμενα Quiz</b><br>
+                    <p>Εδώ ο χρήστης θα μπορέσει να δοκιμάσει τις ικανότητές τους μέσα από τις εξής κατηγορίες ερωτήσεων:</p>
+                    <ul>
+                        <li>Πολλαπλών επιλογών</li>
+                        <li>Σωστού/Λάθους</li>
+                        <li>Πολλαπλών επιλογών με πολλαπλές απαντήσεις</li>
+                        <li>Συμπλήρωσης κενού</li>
+                    </ul>
+				</div>
+            </div>
+
+            <div class="col-4 col-s-12">
+                <img class="Image2" src="./media/Kolokotronis.png">
+            </div>
+		</div><!--row-->
+		<script type="text/javascript">
+			onlyOneCheckBox1()
+		</script>
+	</body>
+	</html>

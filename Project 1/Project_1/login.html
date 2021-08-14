@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Home Page</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="styles/style.css">
+        <link rel="stylesheet" href="styles/form_styling.css">
+        <link rel="stylesheet" href="styles/drop_down_menu.css">
+    </head>
+    <body>
+
+        <header>
+            <h1>C Programming Language</h1>
+            <p>A basic tutorial about flow control in C programming language</p>
+            <nav class="topnav row" id="myTopnav">
+                <a href="index.html">Home</a>
+                <a href="basics.html">C Flow Control</a>
+                <a href="more.html">More</a>
+                <a href="quiz.html">Quiz</a>
+                <a href="sign-up.html">Sign Up</a>
+                <a href="login.html">Login</a>
+                <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="DropDownMenu()">&#9776;</a>
+            </nav>
+        </header>
+
+        <div class="col-5 col-s-7 row">
+            <article>
+                <section>
+                    <p style="font-weight: bold;">Login from below:</p>
+                </section>
+            </article>
+        </div>
+
+        <div class="col-12 row">
+            <form class="col-5 col-s-7 row" action="" method="post">
+
+                <label for="uname"><b>Username</b></label>
+                <input type="text" placeholder="Enter username" name="uname" required>
+
+                <label for="psw"><b>Password</b></label>
+                <input type="password" placeholder="Enter password" name="psw" required> 
+
+                <label>
+                    Remember me
+                    <input type="checkbox" checked="checked" name="remember">
+                </label>
+
+                <input type="submit" value="Login"/> 
+
+                <span class="psw">Forgot <a href="#">password?</a></span>
+
+              </form>
+        </div>
+
+        <footer class="col-12">
+            <p class="col-4">Hope you like my webpage :)</p>
+            <p class="col-4">Contact me <a href="#">here</a>.</p>
+            <p class="col-4">Rate my page <a href="#">here</a>.</p>
+        </footer>
+
+        <script src="scripts/drop_down_menu.js"></script>
+
+    </body>
+</html>

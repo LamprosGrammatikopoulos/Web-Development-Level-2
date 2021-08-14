@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Home Page</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="styles/style.css">
+        <link rel="stylesheet" href="styles/form_styling.css">
+        <link rel="stylesheet" href="styles/drop_down_menu.css">
+    </head>
+    <body>
+
+        <header>
+            <h1>C Programming Language</h1>
+            <p>A basic tutorial about flow control in C programming language</p>
+            <nav class="topnav row" id="myTopnav">
+                <a href="index.html">Home</a>
+                <a href="basics.html">C Flow Control</a>
+                <a href="more.html">More</a>
+                <a href="quiz.html">Quiz</a>
+                <a href="sign-up.html">Sign Up</a>
+                <a href="login.html">Login</a>
+                <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="DropDownMenu()">&#9776;</a>
+            </nav>
+        </header>
+
+        
+        <div class="col-7 col-s-9 row">
+            <article>
+                <section>
+                    <p style="font-weight: bold;">Please fill the quiz below:</p>
+                </section>
+            </article>
+        </div>
+
+        <div class="col-12 row">
+            <form class="col-7 col-s-9" action="" method="post" id="quiz">
+                <h1>Quiz</h1>
+                <br>
+                <li>
+                    <h3>Question 1 - Float type cannot represent X.</h3>
+                    <p>
+                        <br>    
+                        <img src="media/images/question_1.png" alt="question_1">
+                        <br>
+                    </p>
+                    <div>
+                        <input type="radio" name="question-1-answer" id="question-1-answer-T" value="T"/>
+                        <label for="question-1-answer-T">True</label> <!-- Correct -->
+                    </div>
+                    <div>
+                        <input type="radio" name="question-1-answer" id="question-1-answer-F" value="F"/>
+                        <label for="question-1-answer-F">False</label>
+                    </div>
+                </li>
+                <li>
+                    <h3>Question 2 - The program is an infinite loop.</h3>
+                    <p>
+                        <br>    
+                        <img src="media/images/question_2.png" alt="question_2">
+                        <br>
+                    </p>
+                    <div>
+                        <input type="radio" name="question-2-answer" id="question-2-answer-T" value="T"/>
+                        <label for="question-2-answer-T">True</label> <!-- Correct -->
+                    </div>
+                    <div>
+                        <input type="radio" name="question-2-answer" id="question-2-answer-F" value="F"/>
+                        <label for="question-2-answer-F">False</label>
+                    </div>
+                </li>
+                <li>
+                    <h3>Question 3 - What is the output of the following program?</h3>
+                    <p>
+                        <br>    
+                        <img src="media/images/question_3.png" alt="question_3">
+                        <br>
+                    </p>
+                    <div>
+                        <input type="radio" name="question-3-answer" id="question-3-answer-A" value="A"/>
+                        <label for="question-3-answer-A">A) Even</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="question-3-answer" id="question-3-answer-B" value="B"/>
+                        <label for="question-3-answer-B">B) Odd</label> <!-- Correct -->
+                    </div>                 
+                    <div>
+                        <input type="radio" name="question-3-answer" id="question-3-answer-C" value="C"/>
+                        <label for="question-3-answer-C">C) Default</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="question-3-answer" id="question-3-answer-D" value="D"/>
+                        <label for="question-3-answer-D">D) Compile-time error</label>
+                    </div>
+                </li>
+                <li>
+                    <h3>Question 4 - What is the output of the following program?</h3>
+                    <p>
+                        <br>    
+                        <img src="media/images/question_4.png" alt="question_4">
+                        <br>
+                    </p>
+                    <div>
+                        <input type="radio" name="question-4-answer" id="question-4-answer-A" value="A"/>
+                        <label for="question-4-answer-A">A) 1</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="question-4-answer" id="question-4-answer-B" value="B"/>
+                        <label for="question-4-answer-B">B) Runtime error</label> <!-- Correct -->
+                    </div>                 
+                    <div>
+                        <input type="radio" name="question-4-answer" id="question-4-answer-C" value="C"/>
+                        <label for="question-4-answer-C">C) 0</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="question-4-answer" id="question-4-answer-D" value="D"/>
+                        <label for="question-4-answer-D">D) Compile error</label>
+                    </div>
+                </li>
+                <li>
+                    <h3>Question 5 - What is the output of the following program?</h3>
+                    <p>
+                        <br>    
+                        <img src="media/images/question_5.png" alt="question_5">
+                        <br>
+                    </p>
+                    <div>
+                        <input type="checkbox" name="question-5-answer" id="question-5-answer-A" value="A"/>
+                        <label for="question-5-answer-A">A) 9 7 5 3 1</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" name="question-5-answer" id="question-5-answer-B" value="B"/>
+                        <label for="question-5-answer-B">B) 9 8 7 6 5 4 3 2 1</label>
+                    </div>                 
+                    <div>
+                        <input type="checkbox" name="question-5-answer" id="question-5-answer-C" value="C"/>
+                        <label for="question-5-answer-C">C) Infinite loop</label> <!-- Correct -->
+                    </div>
+                    <div>
+                        <input type="checkbox" name="question-5-answer" id="question-5-answer-D" value="D"/>
+                        <label for="question-5-answer-D">D) 9 7 5 3</label>
+                    </div>
+                </li>
+                <li>
+                    <h3>Question 6 - Which of the following describes C?</h3>
+                    <div>
+                        <input type="checkbox" name="question-6-answer" id="question-6-answer-A" value="A"/>
+                        <label for="question-6-answer-A">A) Programming language</label> <!-- Correct -->
+                    </div>
+                    <div>
+                        <input type="checkbox" name="question-6-answer" id="question-6-answer-B" value="B"/>
+                        <label for="question-6-answer-B">B) Scripting language</label>
+                    </div>                 
+                    <div>
+                        <input type="checkbox" name="question-6-answer" id="question-6-answer-C" value="C"/>
+                        <label for="question-6-answer-C">C) Procedural language</label> <!-- Correct -->
+                    </div>
+                    <div>
+                        <input type="checkbox" name="question-6-answer" id="question-6-answer-D" value="D"/>
+                        <label for="question-6-answer-D">D) Array language</label>
+                    </div>
+                </li>
+                <li>
+                    <h3>Question 7 - C is a ... level language.</h3>
+                    <div>
+                        <input type="text" name="question-7-answer" id="question-7-answer-A" placeholder="Enter only one word" pattern="[A-Za-z]+"/> <!-- Low -->
+                    </div>
+                </li>
+                <li>
+                    <h3>Question 8 - The use of goto statement in C is not ...</h3>
+                    <div>
+                        <input type="text" name="question-8-answer" id="question-8-answer-A" placeholder="Enter only one word" pattern="[A-Za-z]+"/> <!-- Recommended -->
+                    </div>
+                </li>
+                <input type="submit" value="Submit Quiz"/>       
+            </form>
+        </div>
+
+        <footer class="col-12">
+            <p class="col-4">Hope you like my webpage :)</p>
+            <p class="col-4">Contact me <a href="#">here</a>.</p>
+            <p class="col-4">Rate my page <a href="#">here</a>.</p>
+        </footer>
+
+        <script src="scripts/drop_down_menu.js"></script>
+
+    </body>
+</html>

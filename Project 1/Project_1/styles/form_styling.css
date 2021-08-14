@@ -1,0 +1,51 @@
+form {
+    display: block;
+    text-align: center;
+    background-color: #cd853f;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+form label, form input {
+    padding: 10px;
+    margin: 10px;
+}
+form input {
+    border: 1px solid black;
+    border-radius: 5px;
+}
+form input[type=submit] {
+    font-size: 20px;
+    background: #2f992f;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 5px 10px;
+}
+form input[type=submit]:hover {
+    background: #296e29;
+}
+form input[type=submit]:active {
+    background: #2fbd2f;
+}
+form li {
+    list-style-type: none;
+    margin: 10px 0px;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 10px 0px;
+}
+input[type=text], input[type=password], input[type=email], input[type=date], input[type=submit], input[type=file] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    box-sizing: border-box;
+    background-color: #c3c3c3;
+    color: #272727;
+}
+input[type=submit] {
+    margin-top: 50px;
+}
+::placeholder {
+    color: #272727;
+    opacity: 1;
+}
